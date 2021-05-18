@@ -6,7 +6,7 @@ Kígyók kígyóznak.
 ## Felhasznált technológiák
 - HTML
 - CSS
-- [JavaScript](www.javascript.com)
+- [JavaScript]()
 
 ## Telepítés
 A program használatához csak egy böngészőre van szükség.
