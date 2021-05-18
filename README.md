@@ -1,17 +1,17 @@
-#Snake
+# Snake
 
-##Programterv
+## Programterv
 Kígyók kígyóznak.
 
-##Felhasznált technológiák
+## Felhasznált technológiák
 - HTML
 - CSS
 - JavaScript
 
-##Telepítés
+## Telepítés
 A program használatához csak egy böngészőre van szükség.
 
-##Érdekesebb megoldások
+## Érdekesebb megoldások
 ```javascript
 	function hello(){
 		console.log('hello');
