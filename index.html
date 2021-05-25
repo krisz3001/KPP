@@ -58,19 +58,19 @@
             const keyPressed = event.keyCode;
             if(turning) return;
             turning = true;
-            if(keyPressed == 37 || keyPressed == 65 && dx != 20){
+            if(keyPressed == 37 && dx != 20 || keyPressed == 65 && dx != 20){
                 dx = -20;
                 dy = 0;
             }
-            if(keyPressed == 38 || keyPressed == 87 && dy != 20){
+            if(keyPressed == 38 && dy != 20 || keyPressed == 87 && dy != 20){
                 dx = 0;
                 dy = -20;
             }
-            if(keyPressed == 39 || keyPressed == 68 && dx != -20){
+            if(keyPressed == 39 && dx != -20 || keyPressed == 68 && dx != -20){
                 dx = 20;
                 dy = 0;
             }
-            if(keyPressed == 40 || keyPressed == 83 && dy != -20){
+            if(keyPressed == 40 dy != -20 || keyPressed == 83 && dy != -20){
                 dx = 0;
                 dy = 20;
             }
