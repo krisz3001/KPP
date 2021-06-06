@@ -43,7 +43,7 @@
 			<div id="restart" onclick="return window.location.reload(true)">
 				<p>Restart</p>
 			</div>
-			<p>or press R</p>
+			<p>or press &ltR&gt</p>
 		</div>
 	</body>
     <script>
@@ -171,7 +171,7 @@
         function drawObstacle(){
 			for(let i = 0; i < obstacles.length; i++){
 				let xy = obstacles[i].split(",")
-				board_ctx.fillStyle = 'white'
+				board_ctx.fillStyle = 'purple'
 				board_ctx.strokeStyle = 'black'
 				board_ctx.fillRect(xy[0], xy[1], 20, 20)
 				board_ctx.strokeRect(xy[0], xy[1], 20, 20)
