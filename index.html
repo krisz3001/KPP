@@ -40,6 +40,7 @@
 			<canvas id="board" width="600" height="600"></canvas>
 			<h1 id="score">Score: 0</h1>
 			<h1 id="hs">Highscore: 0</h1>
+			<p>Press &ltP&gt to reset highscore</p>
 			<div id="restart" onclick="return window.location.reload(true)">
 				<p>Restart</p>
 			</div>
@@ -105,6 +106,10 @@
         function change_direction(event){
             const keyPressed = event.keyCode
 			if(keyPressed == 82) window.location.reload(true)
+			if(keyPressed == 80){
+				localStorage.setItem('hs',0)
+				document.getElementById('hs').innerHTML = "Highscore: " + 0
+			}
             if(turning) return
             turning = true
             if(keyPressed == 37 && dx != 20 || keyPressed == 65 && dx != 20){
