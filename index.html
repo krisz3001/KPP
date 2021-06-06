@@ -128,8 +128,11 @@
             for(let i = 4; i < snake.length; i++){
                 if(snake[i].x == snake[0].x && snake[i].y == snake [0].y) return true
             }
-			const obstacle_hit = snake[0].x === obstacle_x && snake[0].y === obstacle_y
-            return snake[0].x < 0 || snake[0].x > board.width - 20 || snake[0].y < 0 || snake[0].y > board.height - 20 || obstacle_hit
+			for(let i = 0; i < obstacles.length; i++){
+				let xy = obstacles[i].split(",")
+				if(snake[0].x == xy[0] && snake[0].y == xy[1]) return true
+			}
+            return snake[0].x < 0 || snake[0].x > board.width - 20 || snake[0].y < 0 || snake[0].y > board.height - 20
         }
         function random_food(min,max){
             return Math.round((Math.random()*(max-min)+min)/20)*20
